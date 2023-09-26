@@ -88,6 +88,6 @@ def test_dicts():
     first = ["a", "b", "c", "d", "e"]
     second = [1, 2, 3, 4, 5]
     zipped_values = zip(first, second)
-    d = dict(zipped_values)
+    d = dict(zipped_values).values()
     assert isinstance(d, dict)
     assert len(d) == 5
